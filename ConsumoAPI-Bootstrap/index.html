@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Consumo de API - Bootstrap</title>
+  </head>
+  <body>
+    <h1>Exemplo de consumo de API</h1>
+    <p>
+      O objetivo desse exemplo é consumir dados de uma API REST e exibir esses
+      dados em uma página HTML Dinâmica.
+    </p>
+
+    <hr />
+
+    <h2>Dados da API</h2>
+    <p>Demonstrando o código de cada moeda e país</p>
+    <button id="btnBuscar" onclick="carregarDados()">Buscar Dados</button>
+    <div id="div-erro"></div>
+    <div id="div-dados">
+      <table id="dados">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome da Moeda</th>
+          </tr>
+        </thead>
+        <tbody id="itens"></tbody>
+      </table>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

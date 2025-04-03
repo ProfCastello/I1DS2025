@@ -1,0 +1,43 @@
+body {
+  /* zerando configurção css */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* cor */
+  background-color: darkgrey;
+
+  /* alinhamento */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr{
+  width: 99%;
+}
+
+#btnAtualizar {
+  width: 200px;
+  padding: 5px;
+  /* margin: 20px 15px 10px 5px; */
+  /* margin: 20px 10px 5px; */
+  margin: 20px 5px;
+}
+
+th {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: chocolate;
+  min-width: 300px;
+}
+
+tr {
+  text-align: center;
+  background-color: #fff;
+}
+
+.listra {
+  background-color: burlywood;
+}
