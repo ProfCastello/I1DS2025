@@ -13,14 +13,45 @@
     <title>Consumo de API com Bootstrap</title>
   </head>
   <body class="bg-dark text-light text-center">
-
     <h1>Consumo de API com Bootstrap</h1>
-    <p>O objetivo deste exempo é consumir a API REST e exibir os dados em gráficos do Google Charts</p>
+    <p>
+      O objetivo deste exempo é consumir a API REST e exibir os dados em
+      gráficos do Google Charts
+    </p>
     <hr class="my-3" />
 
     <main class="container">
-        
+      <h3>Obter dados de Bitcoin via API</h3>
+      <button
+        id="btnDados"
+        class="btn btn-outline-light my-3"
+        onclick="carregarDados()"
+      >
+        Obter Dados
+      </button>
+
+      <div id="div-erro" class="alert alert-danger"></div>
+
+      <div id="dados">
+        <h3>Variação de Valores</h3>
+        <div id="grafico-precos"></div>
+
+        <h3 class="mt-5">Volume de Negociações</h3>
+        <div id="grafico-volume"></div>
+      </div>
     </main>
 
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

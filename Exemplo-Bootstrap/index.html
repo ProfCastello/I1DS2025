@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Exemplo de Bootstrap</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Introdução Bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Consumo de API 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Consumo de API 2</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mt-5 flex-grow-1">
+      <h1 class="text-center mb-4">Demonstração do Bootstrap</h1>
+
+      <!-- Card de exemplo -->
+      <div class="card mb-4">
+        <div class="card-header">Card de Exemplo</div>
+        <div class="card-body">
+          <h5 class="card-title">Título do Card</h5>
+          <p class="card-text">
+            Este é um exemplo de card do Bootstrap. Você pode adicionar texto,
+            imagens e botões aqui.
+          </p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+
+      <!-- Tabela -->
+      <h2 class="mt-4">Tabela de Exemplo</h2>
+      <table class="table table-striped table-hover mt-3">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>João Silva</td>
+            <td>joao@email.com</td>
+            <td><button class="btn btn-sm btn-warning">Editar</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Maria Souza</td>
+            <td>maria@email.com</td>
+            <td><button class="btn btn-sm btn-danger">Remover</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Botão para abrir Modal -->
+      <button
+        type="button"
+        class="btn btn-success mt-3"
+        data-bs-toggle="modal"
+        data-bs-target="#exemploModal"
+      >
+        Abrir Modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exemploModal"
+        tabindex="-1"
+        aria-labelledby="modalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel">Título do Modal</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Este é um exemplo de modal do Bootstrap.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+              <button type="button" class="btn btn-primary">
+                Salvar mudanças
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer que se ajusta ao conteúdo -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2025 Meu Site&reg; | Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
