@@ -4,3 +4,5 @@ Bem-vindo ao repositório da pizzaria, um site fictício desenvolvido para fins 
 
 🔗 **Veja o site publicado:**
 [Google.com](https://google.com)
+
+---
