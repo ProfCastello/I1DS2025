@@ -136,3 +136,181 @@ header {
     margin: 0;
   }
 }
+
+#Cardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    color: #d03012;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0 0 10px;
+  }
+}
+
+#PromoPizzas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.divider {
+  padding: 40px 0;
+}
+
+#btnCardapio {
+  text-decoration: none;
+  background: #8daa3e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border-bottom: 2px solid #6b7552;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+}
+#btnCardapio:hover {
+  background: #6b7552;
+}
+
+#Delivery {
+  background-color: #ebe7db;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: center;
+
+  & h2 {
+    text-transform: uppercase;
+    color: #bf0a26;
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  & .sec-menu {
+    justify-content: center;
+    color: #fff;
+  }
+}
+
+#Icone {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 20px 0;
+
+  & .itens {
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+#Contato {
+  display: flex;
+  justify-content: center;
+
+  & iframe {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.forms {
+  width: 530px;
+  max-width: 100%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 48px 22px;
+  text-align: center;
+  text-transform: uppercase;
+
+  & h2 {
+    color: #e7a200;
+    font-size: 28px;
+    line-height: 80px;
+    margin: 0;
+  }
+
+  & p {
+    margin: 0;
+    margin-top: -12px;
+    margin-bottom: 12px;
+  }
+
+  & small {
+    color: #333;
+    font-size: 14px;
+  }
+
+  & input,
+  & textarea {
+    padding: 0 16px;
+    line-height: 36px;
+    background: transparent;
+    border-radius: 12px;
+    border-radius: 12px;
+    border: solid 2px #999;
+    font-weight: 400;
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="submit"] {
+    background: #e7a200;
+    border-color: #e7a200;
+    width: 155px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
+
+footer {
+  background-color: #e7a200;
+  margin-top: -145px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#dados {
+  display: flex;
+  margin: 0 14%;
+  justify-content: space-between;
+
+  & div:first-child {
+    margin-left: 10%;
+  }
+  & p,
+  h4 {
+    margin: 0;
+  }
+
+  & h4 {
+    margin-top: 10px;
+  }
+}
+
+#copyright {
+  margin-top: 50px;
+  padding-bottom: 15px;
+}
+
+.esquerda {
+  text-align: start;
+}
