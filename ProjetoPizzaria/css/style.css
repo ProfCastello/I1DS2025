@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,13 +18,6 @@ body {
 
 .bgfundo {
   background: url(https://placehold.co/1920x1080) no-repeat center/cover;
-
-  /*background-color: blue;
-       background-image: url(https://placehold.co/1920x1080);
-       background-repeat: no-repeat;
-       background-position: center center;
-       background-size: cover;*/
-
   width: 100%;
   height: 700px;
 }
@@ -121,6 +118,7 @@ header {
   right: 0;
   top: 200px;
   box-shadow: -10px 10px 13px 0px rgba(0, 0, 0, 0.8);
+  height: 92px;
 }
 
 #BoasVindas {
