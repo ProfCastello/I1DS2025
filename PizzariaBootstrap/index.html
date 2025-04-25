@@ -79,7 +79,7 @@
     <main>
       <a
         href="https://ifood.com.br"
-        class="ifood position-fixed end-0 shadow top-50"
+        class="ifood position-fixed end-0 shadow top-50 z-3"
         target="_blank"
       >
         <img src="https://placehold.co/165x92" alt="" />
@@ -189,55 +189,87 @@
         </div>
       </div>
 
-      <div id="Contato">
+      <div id="Contato" class="d-flex justify-content-center">
         <iframe
+          class="position-absolute z-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8530.664506336121!2d-48.55689387785172!3d-22.285527421262213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8a804409ce4eb%3A0x149d5fdeff965c69!2sCentro%20de%20Treinamento%20Edward%20Savio%20-%20Senai!5e0!3m2!1spt-BR!2sbr!4v1744382325128!5m2!1spt-BR!2sbr"
           width="100%"
-          height="450"
+          height="350"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
 
-        <div class="forms">
-          <h2>entre em contato</h2>
-          <p><small>ficaremos felizes em atende-lo!</small></p>
-          <form action="">
-            <input type="text" name="nome" id="nome" placeholder="NOME" />
-            <input type="email" name="email" id="email" placeholder="E-MAIL" />
+        <div
+          class="z-1 mw-100 shadow text-center text-uppercase px-3 py-5 bg-light"
+        >
+          <h2 class="m-0" style="color: #e7a200">entre em contato</h2>
+          <p class="m-0">
+            <small style="color: #333">ficaremos felizes em atende-lo!</small>
+          </p>
+          <form
+            action=""
+            class="d-flex flex-column align-items-center"
+            style="width: 530px"
+          >
+            <input
+              class="py-0 px-2 bg-transparent rounded w-75 mb-3 mt-3"
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="NOME"
+            />
+            <input
+              class="py-0 px-2 bg-transparent rounded w-75 mb-3"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-MAIL"
+            />
             <textarea
+              class="py-0 px-2 bg-transparent rounded w-75 mb-3"
+              style="resize: none"
               name="mensagem"
               id="mensagem"
               cols="40"
-              rows="6"
+              rows="10"
               placeholder="MENSAGEM"
             ></textarea>
-            <input type="submit" name="enviar" value="ENVIAR" />
+            <input
+              class="rounded rounded-pill px-4 py-1 text-light border-0"
+              style="background-color: #e7a200"
+              type="submit"
+              name="enviar"
+              value="ENVIAR"
+            />
           </form>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div id="dados">
-        <div>
+    <footer
+      class="text-light text-center py-5"
+      style="background-color: #e7a200; margin-top: -205px"
+    >
+      <div id="dados" class="d-flex my-0 mx-2 justify-content-between">
+        <div style="margin-left: 15%">
           <img src="https://placehold.co/182x50" alt="" />
           <h3>Conheça também:</h3>
           <!-- inserir os ícones referentes ao local desejado -->
         </div>
 
-        <div class="esquerda">
-          <h4>Localização</h4>
-          <p>R. Cap. José Ribeiro, 294 Jardim Regina, Jaú - SP</p>
-          <h4>Contato</h4>
-          <p><small>14</small> 4002-8922</p>
-          <h4>Email</h4>
-          <p>email@email.com</p>
+        <div class="text-end" style="margin-right: 15%">
+          <h4 class="m-0">Localização</h4>
+          <p class="m-0">R. Cap. José Ribeiro, 294 Jardim Regina, Jaú - SP</p>
+          <h4 class="m-0">Contato</h4>
+          <p class="m-0"><small>14</small> 4002-8922</p>
+          <h4 class="m-0">Email</h4>
+          <p class="m-0">email@email.com</p>
         </div>
       </div>
 
-      <div id="copyright">
+      <div id="copyright" class="mt-5">
         Todos os direitos reservados | &copy; Pizzaria -
         <script>
           document.write(new Date().getFullYear());
