@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pizzaria | Bootstrap</title>
+  </head>
+
+  <body class="m-0 p-0">
+    <!-- zeramos a margin e o padding para os componentes -->
+    <div id="Inicio" class="bgfundo w-100"></div>
+    <!-- w-100 faz comprimento 100% da tela -->
+
+    <header class="text-white position-fixed top-0 start-0 end-0 z-3 py-4">
+      <div
+        class="container my-0 d-flex justify-content-between align-items-center my-4"
+      >
+        <nav id="site-navigation" class="d-flex align-items-center gap-4">
+          <img src="https://placehold.co/211x58" alt="" height="58px" />
+          <ul id="menu-principal" class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#Inicio">Pizzaria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#Cardapio"
+                >Cardápio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#Delivery"
+                >Delivery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#Contato">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-flex align-items-center gap-3">
+          <a
+            href="https://wa.me/551499999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+            target="_blank"
+            class="nav-link"
+          >
+            <div
+              id="btnzap"
+              class="d-flex align-items-center gap-2 fw-bold fs-5 rounded-pill px-4 py-2"
+            >
+              🛵
+              <b><small>14</small> 9999.9999</b>
+            </div>
+          </a>
+          <a href="" class="nav-link fs-4">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="nav-link fs-4">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <a
+        href="https://ifood.com.br"
+        class="ifood position-fixed end-0 shadow top-50"
+        target="_blank"
+      >
+        <img src="https://placehold.co/165x92" alt="" />
+      </a>
+
+      <div
+        id="BoasVindas"
+        class="container d-flex justify-content-center align-items-center gap-5 my-0"
+      >
+        <img src="https://placehold.co/300x200" alt="" />
+        <div id="TextoBoasVindas">
+          <h4>Seja Bem Vindo a</h4>
+          <h3>PIZZARIA</h3>
+          <p>
+            A pizza atravessou o Atlântico, conquistou São Paulo e os nossos
+            corações. Na Castello's Pizzaria queremos que você tenha a melhor
+            experiência ao apreciar todo o sabor de uma verdadeira pizza.
+            Tradição e qualidade que se iniciam desde a escolha minuciosa dos
+            ingredientes, incluindo o preparo artesanal da massa e ambiente para
+            família e amigos.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="Cardapio"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <img class="divider" src="https://placehold.co/210x25" alt="" />
+        <h2 class="text-uppercase fw-bold text-danger mt-4">nosso cardápio</h2>
+        <a
+          id="btnCardapio"
+          class="d-inline-block my-3 btn btn-success rounded-pill"
+          href="#"
+          >conheça nossas delícias</a
+        >
+
+        <div id="PromoPizzas" class="row justify-content-center g-3 w-100">
+          <img
+            class="col-6 col-md-3"
+            src="https://placehold.co/460x460"
+            alt=""
+          />
+          <img
+            class="col-6 col-md-3"
+            src="https://placehold.co/460x460"
+            alt=""
+          />
+          <img
+            class="col-6 col-md-3"
+            src="https://placehold.co/460x460"
+            alt=""
+          />
+          <img
+            class="col-6 col-md-3"
+            src="https://placehold.co/460x460"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div
+        id="Delivery"
+        class="d-flex justify-content-center align-items-center gap-5 mt-4"
+      >
+        <div
+          class="d-flex flex-column justify-content-center align-items-center gap-4"
+        >
+          <h2 class="text-uppercase text-danger fw-bolder">delivery</h2>
+          <p>Faça o seu pedido! Pizzaria agora em sua casa.</p>
+          <img class="divider" src="https://placehold.co/210x25" alt="" />
+          <div class="sec-menu">
+            <a
+              href="https://wa.me/551499999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+              target="_blank"
+              class="nav-link text-white"
+            >
+              <div
+                id="btnzap"
+                class="d-flex align-items-center gap-2 fw-bold fs-5 rounded-pill px-4 py-2"
+              >
+                🛵
+                <b><small>14</small> 9999.9999</b>
+              </div>
+            </a>
+          </div>
+        </div>
+        <img src="https://placehold.co/512x340" alt="" />
+      </div>
+
+      <div id="Icone" class="w-100 row text-center my-5">
+        <div class="col-6 col-md-3">
+          <img src="https://placehold.co/120" alt="" />
+          <p>Ingredientes frescos e de altíssima qualidade.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://placehold.co/120" alt="" />
+          <p>Ingredientes frescos e de altíssima qualidade.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://placehold.co/120" alt="" />
+          <p>Ingredientes frescos e de altíssima qualidade.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://placehold.co/120" alt="" />
+          <p>Ingredientes frescos e de altíssima qualidade.</p>
+        </div>
+      </div>
+
+      <div id="Contato">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8530.664506336121!2d-48.55689387785172!3d-22.285527421262213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8a804409ce4eb%3A0x149d5fdeff965c69!2sCentro%20de%20Treinamento%20Edward%20Savio%20-%20Senai!5e0!3m2!1spt-BR!2sbr!4v1744382325128!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <div class="forms">
+          <h2>entre em contato</h2>
+          <p><small>ficaremos felizes em atende-lo!</small></p>
+          <form action="">
+            <input type="text" name="nome" id="nome" placeholder="NOME" />
+            <input type="email" name="email" id="email" placeholder="E-MAIL" />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="40"
+              rows="6"
+              placeholder="MENSAGEM"
+            ></textarea>
+            <input type="submit" name="enviar" value="ENVIAR" />
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="dados">
+        <div>
+          <img src="https://placehold.co/182x50" alt="" />
+          <h3>Conheça também:</h3>
+          <!-- inserir os ícones referentes ao local desejado -->
+        </div>
+
+        <div class="esquerda">
+          <h4>Localização</h4>
+          <p>R. Cap. José Ribeiro, 294 Jardim Regina, Jaú - SP</p>
+          <h4>Contato</h4>
+          <p><small>14</small> 4002-8922</p>
+          <h4>Email</h4>
+          <p>email@email.com</p>
+        </div>
+      </div>
+
+      <div id="copyright">
+        Todos os direitos reservados | &copy; Pizzaria -
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
